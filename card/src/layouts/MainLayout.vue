@@ -20,7 +20,16 @@
           label = "Practice"
           flat
         )
-
+    q-footer
+      q-toolbar
+        .row.q-pa-xs
+          q-item
+            .col-3
+              q-item-section
+                q-icon(name="mail")
+            .col-3
+              q-item-section
+                | gul.lera.5@mail.ru
     q-page-container
       router-view
 </template>
