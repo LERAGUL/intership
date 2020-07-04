@@ -1,6 +1,6 @@
 <template lang="pug">
   q-layout(view="lHh Lpr lFf")
-    q-header(elevated)
+    q-header
       q-toolbar
 
         q-btn(
@@ -21,15 +21,16 @@
           flat
         )
     q-footer
-      q-toolbar
-        .row.q-pa-xs
-          q-item
-            .col-3
-              q-item-section
-                q-icon(name="mail")
-            .col-3
-              q-item-section
-                | gul.lera.5@mail.ru
+      .row.q-pa-sm
+        .col-2.q-pa-xs
+            q-icon(name="ion-mail")
+            |  gul.lera.5@mail.ru
+        .col-2.q-pa-xs
+            q-icon(name="ion-logo-vk")
+            |  vk.com/id170724277
+        .col-2.q-pa-xs
+            q-icon(name="ion-logo-instagram")
+            |  srpsee
     q-page-container
       router-view
 </template>

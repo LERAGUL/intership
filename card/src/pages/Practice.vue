@@ -1,5 +1,7 @@
 <template lang="pug">
-  div
+  q-page(
+    padding
+  )
     | Practice
 </template>
 
