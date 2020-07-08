@@ -1,65 +1,72 @@
 <template lang="pug">
   q-layout(view="lHh Lpr lFf")
-    q-page(
+    q-page.text(
       padding
     )
       div(
         style="width: 50%; margin:0 auto"
       )
-        q-card.my-card.text-white.q-ma-sm(
-          style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
+        q-card.post-skill.q-ma-md(
+          flat
         )
-          q-card-section.text-h5.q-pb-none
-            | Базы данных
-          q-card-section.q-pt-none
+          q-card-section.text-h5.q-pb-none.title
+            | {{ $t('databases')}}
+            i(
+              class="fas fa-database"
+              style="float: right"
+            )
+          q-card-section.q-pt-none.content
             ul
               li
-                | Знание SQL
+                | {{ $t('knowledge')}} SQL
               li
-                | СУБД Oracle
+                | {{ $t('dbms')}}
               li
                 | Oracle Application Express
-        q-card.my-card.text-white.q-ma-sm(
-          style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
+        q-card.post-skill.q-ma-md(
+          flat
         )
-          q-card-section.text-h5.q-pb-none
-            | Низкоуровневое программирование
-          q-card-section.q-pt-none
+          q-card-section.text-h5.q-pb-none.title
+              | {{$t('programming')}}
+              q-icon(
+                name="ion-code"
+                style="float: right"
+              )
+          q-card-section.q-pt-none.content
             ul
               li
-                | Ассемблер masm32
+                | C/C++, JS, Ruby, Pascal
               li
-                | Знание основ компиляции
-        q-card.my-card.text-white.q-ma-sm(
-          style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
-        )
-          q-card-section.text-h5.q-pb-none
-              | Высокоуровневое программирование
-          q-card-section.q-pt-none
-            ul
-              li
-                | Языки C/C++, JS, Ruby, Pascal
-              li
-                | Знание ООП
+                | {{ $t('knowledge')}} OOP
               li
                 | Qt, Lasarus
               li
                 | Ruby on Rails, Vue
-        q-card.my-card.text-white.q-ma-sm(
-          style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
+              li
+                | HTML, CSS
+              li
+                | {{ $t('assembler') }} masm32
+              li
+                | {{ $t('knowledge') }}  {{$t('compilation')}}
+        q-card.post-skill.q-ma-md(
+          flat
         )
-          q-card-section.text-h5.q-pb-none
-              | Дополнительные навыки
-          q-card-section.q-pt-none
+          q-card-section.text-h5.q-pb-none.title
+              | {{$t('additionalskills')}}
+              q-icon(
+                name="ion-add-circle-outline"
+                style="float: right"
+              )
+          q-card-section.q-pt-none.content
             ul
               li
-                | Умение работать с документацией
+                | {{$t('documentation')}}
               li
-                | Умение писать ТЗ
+                | {{$t('technicalreport')}}
               li
-                | Знание основыных подходов к рабзработке программных продуктов
+                | {{$t('software')}}
               li
-                | Английский язык B1
+                | {{$t('english')}}
 </template>    
 <script>
   export default {
